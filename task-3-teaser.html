@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Дразнилка</title>
+    </head>
+    <body>
+        <p>Задание по книге Javascript для детей</p>
+        <script>
+
+            var randomBodyParts = ["глаз", "нос", "череп"];
+            var randomAdjectives = ["вонючая", "унылая", "дурацкая"];
+            var randomWords = ["муха", "выдра", "дубина", "мартышка", "крыса"];
+            let randomBodyPart = randomBodyParts[Math.floor(Math.random() * randomBodyParts.length)];
+            let randomAdjective = randomAdjectives[Math.floor(Math.random() * randomAdjectives.length)];
+            let randomWord = randomWords[Math.floor(Math.random() * randomWords.length)];
+            let random = ["У тебя,",randomBodyPart,"словно", randomAdjective, randomWord + "!!!"];
+
+            console.log(random.join(" "));
+
+        </script>
+    </body>
+</html>
