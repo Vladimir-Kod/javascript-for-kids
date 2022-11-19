@@ -24,8 +24,9 @@
         answerArray[i] = "_";
     }
     var remainingLetters = word.length;
+    var step = 15;
     
-    while (remainingLetters > 0) {
+    while (remainingLetters > 0 && step > 0) {
         // Основной код
         // Показываем состояние игры
         // Запрашиваем вариант ответа
@@ -33,7 +34,7 @@
         // вхождения угаданной буквы
 
         alert(answerArray.join(" "));
-        var guess = prompt("Угадайте букву или нажмите Отмена для выхода из игры.");
+        var guess = prompt("Угадайте букву или нажмите Отмена для выхода из игры." + " осталось попыток " + step);
         if (guess === null){ 
           break;
         } else if (guess.length !== 1) { 
@@ -47,6 +48,7 @@
           } 
         }
         }
+        step--;
     } 
     alert(answerArray.join(" "));
     alert("Отлично! Было загадано слово " + word);   
