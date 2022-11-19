@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Javascript для детей</title>
+</head>
+<body>
+  <p>Задание по книге Javascript для детей</p>
+    
+  <script>
+    //Переведите англоязычный текст на «хакерский язык» (h4ck3r sp34k)! 
+    //Многим в интернете нравится заменять некоторые буквы похожими на 
+    //них числами — например, число «4» похоже на букву «A», «3» 
+    //похоже на «E», «1» — на «I», а «0» — на «О». Хотя цифры напоминают 
+    //скорее заглавные буквы, мы будем заменять ими буквы строчные. 
+    //Чтобы перевести обычный текст на «хакер- ский язык», понадобится 
+    //строка с исходным текстом и новая пустая строка для результата:
+    //var input = "javascript is awesome";
+    //var output = "";
+
+    var input = "javascript is awesome";
+    var output = "";
+
+    for (var i = 0; i < input.length; i++){
+        if (input[i] === "a"){
+            output += "4"
+        } else if (input[i] === "e"){
+            output += "3"
+        } else if (input[i] === "i"){
+            output += "1"
+        } else if (input[i] === "o"){
+            output += "0"
+        } else {
+            output += input[i]
+        }
+    }
+    console.log(output)
+
+       
+  </script>
+</body>
+</html>
