@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Javascript для детей</title>
+</head>
+<body>
+  <p>Задание по книге Javascript для детей</p>
+    
+  <script>
+    let alphabet = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя";
+    let alphabetRandom = "";
+    let i = 0;
+    
+    while (i < 6){
+        alphabetRandom += alphabet[Math.floor(Math.random() * alphabet.length)];
+        i++;
+    };
+
+    console.log(alphabetRandom);
+       
+  </script>
+</body>
+</html>
