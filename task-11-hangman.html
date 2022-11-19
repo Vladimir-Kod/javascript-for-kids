@@ -8,10 +8,13 @@
   <p>Задание по книге Javascript для детей</p>
     
   <script>
-    var words = [ "программа",
+    var words = [ 
+        "программа",
         "макака",
         "прекрасный",
-        "оладушек"
+        "оладушек",
+        "ноутбук",
+        "телевизор"
     ];
 
     var word = words[Math.floor(Math.random() * words.length)];
@@ -38,8 +41,8 @@
         } else {
         // Обновляем состояние игры
         for (var j = 0; j < word.length; j++) { 
-          if (word[j] === guess) {
-          answerArray[j] = guess;
+          if (word[j] === guess.toLowerCase()) {
+          answerArray[j] = guess.toLowerCase();
           remainingLetters--;
           } 
         }
