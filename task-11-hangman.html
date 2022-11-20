@@ -42,7 +42,7 @@
         } else {
         // Обновляем состояние игры
         for (var j = 0; j < word.length; j++) { 
-          if (word[j] === guess.toLowerCase()) {
+          if (word[j] === guess.toLowerCase() && answerArray[j]!== guess.toLowerCase()) {
           answerArray[j] = guess.toLowerCase();
           remainingLetters--;
           } 
@@ -50,8 +50,13 @@
         }
         step--;
     } 
-    alert(answerArray.join(" "));
-    alert("Отлично! Было загадано слово " + word);   
+    if (remainingLetters === 0){
+        alert(answerArray.join(" "));
+        alert("Отлично! Было загадано слово " + word);  
+    } else if (step === 0){
+        alert(answerArray.join(" "));
+        alert("Конец игры! У вас закончились ходы!");
+    } 
        
   </script>
 </body>
