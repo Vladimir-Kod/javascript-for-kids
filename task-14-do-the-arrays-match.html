@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Javascript для детей</title>
+</head>
+<body>
+  <p>Задание по книге Javascript для детей</p>
+    
+  <script>
+    //#2. Совпадают ли массивы?
+    //Напишите функцию areArraysSame, которая принимает два массива с числами в качестве аргументов. 
+    //Она должна возвра- щать true, если эти массивы одинаковые (то есть содержат одни и те же числа 
+    //в одном и том же порядке), или false, если мас- сивы различаются. Убедитесь, что ваша функция 
+    //работает пра- вильно, запустив такой код:
+    //areArraysSame([1, 2, 3], [4, 5, 6]);
+    //false
+    //areArraysSame([1, 2, 3], [1, 2, 3]);
+    //true
+    //areArraysSame([1, 2, 3], [1, 2, 3, 4]);
+    //false
+
+    function comparison(argument1, argument2){
+        for (let i = 0; i < argument1.length; i++){
+            if (argument1.length !== argument2.length){
+                return false
+            } else if (argument1[i] !== argument2[i]){
+                return false
+            } 
+        }
+        return true;
+    };
+       
+  </script>
+</body>
+</html>
