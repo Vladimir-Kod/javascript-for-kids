@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Javascript для детей</title>
+</head>
+<body>
+  <p>Задание по книге Javascript для детей</p>
+    
+  <script>
+    
+    var randomBodyParts = ["глаз", "нос", "череп"];
+    var randomAdjectives = ["вонючая", "унылая", "дурацкая"];
+    var randomWords = ["муха", "выдра", "дубина", "мартышка", "крыса"];
+
+    var randomWord = function (words){
+        return words[Math.floor(Math.random() * words.length)]
+    };
+
+    console.log("У тебя, " + randomWord(randomBodyParts) + " словно " + randomWord(randomAdjectives) + " " + randomWord(randomWords) + "!")
+       
+  </script>
+</body>
+</html>
